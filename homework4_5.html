@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4 5</title>
+</head>
+<body>
+    <script>    
+        'use strict';
+
+        function addit(a,b) {
+            return a + b;
+        }
+        function substr(a,b) {
+            return a - b;
+        }
+        function multip(a,b) {
+            return a * b;
+        }
+        function divideby(a,b) {
+            return a / b;
+        }
+        function mathOperation(arg1, arg2, operation) {
+            switch(operation) {
+                case "сложение":
+                return(addit(arg1,arg2));
+                case "вычитание":
+                return(substr(arg1,arg2));
+                case "умножение":
+                return(multip(arg1,arg2));
+                case "деление":
+                return(divideby(arg1,arg2));
+            }    
+        }
+        let arg1 = Number(prompt("Введите число 1"));
+        let arg2 = Number(prompt("Введите число 2"));
+        let operation = (prompt("Введите название операции (сложение, вычитание, умножение, деление)"));
+        alert(mathOperation(arg1,arg2,operation));                       
+    </script>
+</body>
+</html>

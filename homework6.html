@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function currencyDef(a) {
+            let lastTwoDigits = a % 100;
+            if (lastTwoDigits>=11 && lastTwoDigits<=14) {
+                return ("рублей");
+            }
+            let lastDigit = a % 10;
+            switch(lastDigit){
+                case 1:
+                return("рубль");
+                case 2:
+                case 3: 
+                case 4: 
+                return("рубля");
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 0:
+                return("рублей");
+            }
+        }
+        let a = prompt("Введите сумму для зачисления на счёт");
+        alert(`Ваша сумма в ${a} ${currencyDef(a)} зачислена`);
+    </script>
+</body>
+</html>
