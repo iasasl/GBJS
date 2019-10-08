@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+    <script>
+        let parcingNumber = prompt('Введите ваше число');
+
+        function getDigits(item) {
+            if (item < 0 || item > 999 || Number.isInteger(item) != true) {
+                console.log('Ваше число не лежит в диапазоне от 0 до 999 или не является целым числом.')
+                return {};
+            } else {
+                return {
+                    units: item % 10,
+                    tens: parseInt(item / 10) % 10,
+                    hundreds: parseInt(item / 100),
+                }
+            }
+        }
+
+        console.log(getDigits(parcingNumber));
+    </script>
+</body>
+</html>
