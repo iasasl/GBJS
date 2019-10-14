@@ -1,0 +1,39 @@
+.window {
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow:3px 2px 12px 5px rgba(17,24,19,0.39);
+    position: relative;
+}
+
+.window span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -22px;
+    top: -12px;
+    width: 45px;
+    height: 23px;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: dimgrey;
+    border: 1px solid grey;
+    background-color: gainsboro;
+    border-radius: 7px;
+}
+
+.window span:hover {
+    background-color: lemonchiffon;
+    transition: .3s;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    margin: auto;
+}

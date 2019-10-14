@@ -23,4 +23,4 @@ let game = {
             }
         }
     }
-console.log('Введите game.run(), чтобы начать игру')
+console.log('Введите game.run(), чтобы начать игру');
