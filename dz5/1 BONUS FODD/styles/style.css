@@ -1,0 +1,22 @@
+body {
+    background-color: antiquewhite;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: blueviolet;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.foodCell {
+    background-color: aqua;
+}
+
+.user {
+    background-color: maroon;
+}
