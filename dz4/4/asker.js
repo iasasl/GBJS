@@ -1,11 +1,12 @@
+'use strict';
+
+let possibleAnswers = ['a','b','c','d'];
+
 let asker = {
-    getAnswer() {
-        let answer = prompt(`${tasks[i].question}`);
-        if (!tasks.answers.includes(answer)) {
-            alert("Введите 'a', 'b', 'c' либо 'd'.");
-            continue;    
+    answerCheck(answer) {   
+        while (!possibleAnswers.includes(answer)) {
+            answer = prompt("Введите 'a', 'b', 'c' либо 'd'.");   
         }
-        counter += 1; 
         return answer;
-        },
     }
+};
