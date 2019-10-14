@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+}
+
+.container div {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 5px;
+}
+
+.container div img {
+    z-index: 2;
+}
+
+.container div span {
+    z-index: 1;
+    position: absolute;
+}
+
+.container div button {
+    margin-top: 8px;
+}
+
+.hidden {
+    visibility: hidden;
+}
