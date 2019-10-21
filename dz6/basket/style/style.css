@@ -2,6 +2,13 @@ table {
     border-spacing: 15px 10px;
 }
 
+.basketContent {
+    position: fixed;
+    top: 95px;
+    right: 50px;
+    color: darkslategrey;
+}
+
 .fa-shopping-basket {
     font-size: 60px;
     position: fixed;
@@ -11,11 +18,20 @@ table {
     cursor: pointer;
 }
 
-.fa-shopping-basket:hover {
-    transform: scale(1.4);
-    transition: .7s;
+.fa-ban {
+    color: cadetblue;
+    cursor: pointer;
 }
 
-.fa-shopping-basket:not(:hover) {
+.fa-ban:hover {
+    transform: scale(1.4);
+    transition: .4s;
+}
+
+.fa-ban:active {
+    color: red;
+}
+
+.fa-ban:not(:hover) {
     transition: .2s;
 }
