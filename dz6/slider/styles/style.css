@@ -1,0 +1,79 @@
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+}
+
+.slider-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    z-index: 0;
+    visibility: hidden;
+}
+
+.fa-spin {
+    font-size: 60px;
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 45%;
+}
+
+.fa-chevron-circle-left {
+    color: coral;
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 25%;
+    left: 2%;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-right {
+    color: coral;
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 25%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.slider-lr-anim {
+    animation-name: lr-anim;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes lr-anim {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slider-rl-anim {
+    animation-name: rl-anim;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes rl-anim {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 0;
+    }
+}
