@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+}
+
+.slider-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    z-index: 0;
+    visibility: hidden;
+}
+
+.fa-spin {
+    font-size: 60px;
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 45%;
+}
+
+.fa-chevron-circle-left {
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 25%;
+    left: 0;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-right {
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 25%;
+    right: 0;
+    cursor: pointer;
+}
