@@ -29,19 +29,51 @@ body {
 }
 
 .fa-chevron-circle-left {
+    color: coral;
     opacity: 0.5;
     font-size: 40px;
     position: absolute;
     margin-top: 25%;
-    left: 0;
+    left: 2%;
     cursor: pointer;
 }
 
 .fa-chevron-circle-right {
+    color: coral;
     opacity: 0.5;
     font-size: 40px;
     position: absolute;
     margin-top: 25%;
-    right: 0;
+    right: 2%;
     cursor: pointer;
+}
+
+.slider-lr-anim {
+    animation-name: lr-anim;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes lr-anim {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slider-rl-anim {
+    animation-name: rl-anim;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes rl-anim {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 0;
+    }
 }

@@ -1,0 +1,21 @@
+table {
+    border-spacing: 15px 10px;
+}
+
+.fa-shopping-basket {
+    font-size: 60px;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+.fa-shopping-basket:hover {
+    transform: scale(1.4);
+    transition: .7s;
+}
+
+.fa-shopping-basket:not(:hover) {
+    transition: .2s;
+}
